@@ -1,1 +1,45 @@
-h5= item.full_name
+h5= item.full_name + " - "
+    a(href= item.html_url)
+        = "View repo"
+p=item.description
+b= "Created at: "
+= item.created_at 
+br
+b= "Updated at: "
+= item.updated_at 
+br
+b= "Pushed at: "
+= item.pushed_at 
+br
+br
+ul
+    li
+        b= "Public? "
+        if item.private==true
+            = "no"
+        else
+            = "yes"
+    li
+        b= "Fork? "
+        if item.fork==true
+            = "yes"
+        else
+            = "no"
+    li
+        b= "Language: "
+        if item.language==null
+            = "N/A"
+        else
+            = item.language
+    li
+        b= "Watchers: "
+        = item.watchers
+    li
+        b= "Stargazers: "
+        = item.stargazers_count 
+    li
+        b= "Forks: "
+        = item.forks 
+    li
+        b= "Open issues: "
+        = item.open_issues 

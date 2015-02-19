@@ -22,8 +22,15 @@ img {
 a#title{
   color: black;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a#title:hover{
-  color: #829db4;
+  color: #306E81;
+}
+
+.button:focus{
+  color: #333;
+  border-color: #888;
+  outline: 0; 
 }
