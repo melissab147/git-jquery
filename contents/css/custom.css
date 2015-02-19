@@ -18,3 +18,19 @@ img {
 	border: 1px #aaa solid;
 	padding: 2px;
 }
+
+a#title{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a#title:hover{
+  color: #306E81;
+}
+
+.button:focus{
+  color: #333;
+  border-color: #888;
+  outline: 0; 
+}

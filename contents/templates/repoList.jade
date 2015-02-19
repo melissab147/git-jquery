@@ -1,8 +1,9 @@
+h4= user
 each item in items
     div.row 
         div.six.columns
             a(href="#", onClick='repoView("' + item.full_name + '")')
-                = item.full_name
+                = item.name
         div.six.columns
             = item.open_issues
             |  issues
