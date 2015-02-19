@@ -1,0 +1,17 @@
+h4= user
+each item in items
+    div.row 
+        div.four.columns
+            a(href="#", onClick='myEvent("' + item.id + '")')
+                = item.type
+        div.four.columns
+            = item.repo.name
+        div.two.columns
+            if item.public==true
+                = "Public"
+            else
+                = "Private"
+        div.two.columns
+            = item.created_at
+
+
